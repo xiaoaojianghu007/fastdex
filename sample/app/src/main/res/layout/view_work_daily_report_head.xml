@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="12月"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        <ImageView
+            android:id="@+id/iv_triangle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/rl_container"
+            android:src="@drawable/work_report_triangle"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/btn"
+            android:background="@drawable/work_report_gray_shape">
+
+            <EditText
+                android:id="@+id/et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="50dp"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:hint="搜索"/>
+
+            <ImageButton
+                android:id="@+id/ib_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/work_report_search_bar"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:padding="10dp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/split_line_color"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_salesman"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/item_bg_selector">
+
+        <TextView
+            android:id="@+id/tv_customer_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="业务员名称"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_salesman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_customer_label"
+            android:layout_marginLeft="25dp"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ico_right_arrow"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
+

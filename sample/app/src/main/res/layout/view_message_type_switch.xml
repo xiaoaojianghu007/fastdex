@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_container"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_site_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rect_bg_checked" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="站内信息"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:padding="2dp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_marginLeft="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rect_bg_default" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机短信"
+            android:textSize="12sp"
+            android:padding="2dp"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+</LinearLayout>

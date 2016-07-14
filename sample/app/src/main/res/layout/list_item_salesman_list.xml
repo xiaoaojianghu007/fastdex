@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/item_bg_selector"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_item_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:clickable="true"
+        android:paddingBottom="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小苏"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="13856786340"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/ib_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:background="@null"
+            android:clickable="false"
+            android:src="@drawable/arrow_default" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#edefee"
+        android:paddingTop="4dp"
+        android:paddingBottom="2dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/ll_tab_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="4dp"
+            android:paddingTop="2dp">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_tab_01"
+                        android:layout_width="@dimen/salesman_item_drawable_top_width_height"
+                        android:layout_height="@dimen/salesman_item_drawable_top_width_height"
+                        android:src="@drawable/product_detail" />
+
+                    <TextView
+                        android:id="@+id/tv_tab_01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="查看产品"
+                        android:textColor="@color/tab_text_default"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/unread_msg_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/bg_unread_count_bg"
+                    android:gravity="center"
+                    android:text="7"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_tab_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="4dp"
+            android:paddingTop="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_tab_02"
+                    android:layout_width="@dimen/salesman_item_drawable_top_width_height"
+                    android:layout_height="@dimen/salesman_item_drawable_top_width_height"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/customer_detail" />
+
+                <TextView
+                    android:id="@+id/tv_new_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/iv_tab_02"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_tab_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看客户"
+                android:textColor="@color/tab_text_default"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_tab_03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="4dp"
+            android:paddingTop="2dp">
+
+            <ImageView
+                android:id="@+id/iv_tab_03"
+                android:layout_width="@dimen/salesman_item_drawable_top_width_height"
+                android:layout_height="@dimen/salesman_item_drawable_top_width_height"
+                android:src="@drawable/modify" />
+
+            <TextView
+                android:id="@+id/tv_tab_03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="修改"
+                android:textColor="@color/tab_text_default"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_tab_04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="4dp"
+            android:paddingTop="2dp">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_tab_04"
+                        android:layout_width="@dimen/salesman_item_drawable_top_width_height"
+                        android:layout_height="@dimen/salesman_item_drawable_top_width_height"
+                        android:src="@drawable/delete" />
+
+                    <TextView
+                        android:id="@+id/tv_tab_04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="删除"
+                        android:textColor="@color/tab_text_default"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

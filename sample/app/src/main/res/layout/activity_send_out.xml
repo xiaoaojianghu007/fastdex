@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/default_activity_bg">
+
+    <com.example.fertilizercrm.view.TitleView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_heigth"
+        android:tag="《:(发货)"/>
+
+    <com.example.fertilizercrm.view.SendOutOrInHeadView
+        android:id="@+id/head_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_customer"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/item_bg_selector">
+
+        <TextView
+            android:id="@+id/tv_customer_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="客户名称"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_customer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_customer_label"
+            android:layout_marginLeft="25dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ico_right_arrow"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/split_line_color"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/split_line_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <com.example.fertilizercrm.sdlv.SlideAndDragListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ll_bottom"
+            android:dividerHeight="1dp"
+            android:divider="@color/split_line_color"/>
+
+        <TextView
+            android:id="@+id/tv_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="你还未选择任何产品"
+            android:gravity="center"
+            android:layout_above="@+id/ll_bottom"
+            android:visibility="invisible"/>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cccbcd"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_quantity"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:text="数量： 0"/>
+
+                <TextView
+                    android:id="@+id/tv_total_sales"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:text="销售总计： 0"/>
+
+                <TextView
+                    android:id="@+id/tv_total_should"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:text="应收总计： 0"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/split_line_color"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+
+                <Button
+                    android:id="@+id/btn_add_product"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="添加商品"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_red_selector"/>
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="发    货"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_green_selector"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

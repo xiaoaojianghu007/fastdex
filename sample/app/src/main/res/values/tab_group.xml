@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tab_bg_default">#ffffff</color>
+    <color name="tab_bg_checked">#ffffff</color>
+
+    <color name="tab_text_default">#3e3f40</color>
+    <color name="tab_text_checked">#23a85d</color>
+
+    <dimen name="tab_drawable_top_width_height">25dp</dimen>
+    <dimen name="salesman_item_drawable_top_width_height">25dp</dimen>
+    <dimen name="tabbar_height">52dp</dimen>
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_container"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1">-->
+
+        <!--<Button-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginBottom="2dp"-->
+            <!--android:background="@null"-->
+            <!--android:text="全部"-->
+            <!--android:textColor="@color/black"/>-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="2dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:background="#2ba55b" />-->
+    <!--</RelativeLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/rl_yiji"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:background="@null"
+            android:text="批发商"
+            android:textColor="@color/black"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="#2ba55b"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_erji"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:background="@null"
+            android:text="零售商"
+            android:textColor="@color/black"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="#2ba55b"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_farmer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:background="@null"
+            android:text="农户"
+            android:textColor="@color/black"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="#2ba55b"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+</LinearLayout>

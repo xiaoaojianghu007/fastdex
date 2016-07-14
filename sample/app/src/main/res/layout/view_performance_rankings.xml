@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/split_line_color">
+
+        <Button
+            android:id="@+id/btn_type"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="客户销售"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:background="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btn_location"
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="match_parent"
+            android:text="吉林"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:background="@color/white"
+            android:layout_marginLeft="1dp"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.8"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="@color/white"
+            android:layout_marginLeft="1dp">
+
+            <LinearLayout
+                android:id="@+id/ll_start_time"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开始时间:"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tv_start_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2015-01-01"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="12sp"
+                    android:textColor="#959697"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="结束时间:"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tv_end_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2015-01-01"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="12sp"
+                    android:textColor="#959697"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_product"
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:layout_height="match_parent"
+            android:text="化肥"
+            android:background="@color/white"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginLeft="1dp"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btn_customer"
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginLeft="1dp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/split_line_color"/>
+</LinearLayout>

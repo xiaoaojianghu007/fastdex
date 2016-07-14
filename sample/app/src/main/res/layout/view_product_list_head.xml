@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/et_green_bg"
+            android:hint="输入你要找的化肥名字"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/search_bar"
+            android:padding="10dp"
+            android:clickable="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/split_line_color"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:id="@+id/tv_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="全 部" />
+
+            <ImageView
+                android:id="@+id/iv_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_all"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/green_array_right"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_stock"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/split_line_color"
+            android:layout_marginLeft="5dp">
+
+            <TextView
+                android:id="@+id/tv_stock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="库 存" />
+
+            <ImageView
+                android:id="@+id/iv_stock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_stock"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/green_array_top"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

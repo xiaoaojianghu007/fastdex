@@ -1,0 +1,162 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_activity_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.example.fertilizercrm.view.TitleView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="《:(客户拜访)" />
+
+        <RelativeLayout
+            android:id="@+id/rl_visit_date"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拜访日期"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_visit_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/iv_array"
+                android:layout_marginRight="5dp"
+                android:textSize="12sp"
+                android:layout_centerVertical="true"
+                android:text="2016-01-01"
+                android:tag="@string/profile_item_part"
+                />
+
+            <ImageView
+                android:id="@+id/iv_array"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ico_right_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#e5e6e7"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_people_visit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拜访人"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_visit_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/iv_array"
+                android:layout_marginRight="5dp"
+                android:textSize="12sp"
+                android:layout_centerVertical="true"
+                android:tag="@string/profile_item_part"
+                />
+
+            <ImageView
+                android:id="@+id/iv_array"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ico_right_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#e5e6e7"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="上传图片"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="16sp"/>
+
+       <com.example.fertilizercrm.view.ImageLinearLayout
+           android:id="@+id/image_ll"
+           android:layout_width="match_parent"
+           android:layout_height="80dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/split_line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:hint="多行输入..."
+                android:textSize="13sp"
+                android:gravity="top"
+                android:padding="7dp"
+                android:textColor="#979899"
+                android:background="@drawable/work_border_bg_shape"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#e5e6e7"/>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/btn_common_height"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="提交"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/rl_pwd"
+            android:background="@drawable/btn_green_selector"/>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/default_activity_bg">
+
+    <com.example.fertilizercrm.view.TitleView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_heigth"
+        android:tag="《:(厂家资料)"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_ptype"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_item_height"
+                android:orientation="vertical"
+                android:background="@drawable/item_bg_selector"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp"
+                android:onClick="true"
+                android:tag="name">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="生产类型"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14sp"
+                    android:layout_centerVertical="true"
+                    android:tag="@string/profile_item_label"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_ptype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/iv_array"
+                    android:layout_marginRight="5dp"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:tag="@string/profile_item_part"/>
+
+                <ImageView
+                    android:id="@+id/iv_array"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_right_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/split_line_color"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_tech"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_item_height"
+                android:orientation="vertical"
+                android:background="@drawable/item_bg_selector"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp"
+                android:onClick="true"
+                android:tag="mobile">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="工艺"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14sp"
+                    android:layout_centerVertical="true"
+                    android:tag="@string/profile_item_label"/>
+
+                <TextView
+                    android:id="@+id/tv_tech"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/iv_array"
+                    android:layout_marginRight="5dp"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:tag="@string/profile_item_part"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_array"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_right_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/split_line_color" />
+
+            <RelativeLayout
+                android:id="@+id/rl_capacity"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:background="@drawable/item_bg_selector">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="产能"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14sp"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_capacity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0吨"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentRight="true"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_right_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:visibility="gone"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/split_line_color" />
+
+            <RelativeLayout
+                android:id="@+id/rl_output"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="vertical"
+                android:background="@drawable/item_bg_selector"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="年产能"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14sp"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/tv_output"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0吨"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentRight="true"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_right_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/split_line_color" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.example.fertilizercrm.view.TitleView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_heigth"
+            android:tag="《:(关于我们)"/>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_launcher"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="v1.0"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="吉林省中威雨露科技有限公司成立于2015年，是一家专注于化肥管理、销售于一体的互联网公司。公司主营产品为肥肥APP客户端，为化肥厂家及代理商提供管理支撑，肥肥APP是一款集EPR系统、CRM系统、财务管理、员工管理等于一体的软件， 公司主要依托肥肥APP构建化肥厂家、代理商、农户生态圈，让管理融入销售的同时，提升企业竞争力。未来，肥肥APP将已做化肥专业化平台为目标，集化肥销售、农业技术推广、测土配方、农村金融等为一体的综合性化肥服务商。"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+
+</ScrollView>

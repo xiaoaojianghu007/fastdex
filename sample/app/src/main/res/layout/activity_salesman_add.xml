@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/default_activity_bg">
+
+    <com.example.fertilizercrm.view.TitleView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_heigth"
+        android:tag="《:(添加业务员)"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_item_height"
+                android:orientation="vertical"
+                android:background="@drawable/item_bg_selector"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp"
+                android:layout_marginTop="20dp"
+                android:onClick="true"
+                android:tag="head">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="头像"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14sp"
+                    android:layout_centerVertical="true"
+                    android:tag="@string/profile_item_label"/>
+
+                <ImageView
+                    android:id="@+id/iv_head"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/default_img"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/iv_array"
+                    android:layout_marginRight="5dp"
+                    android:layout_centerVertical="true"
+                    android:tag="@string/profile_item_part"/>
+
+                <ImageView
+                    android:id="@+id/iv_array"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_right_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/split_line_color"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_item_height"
+                android:orientation="vertical"
+                android:background="@drawable/item_bg_selector"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp"
+                android:onClick="true"
+                android:tag="name">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓名"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14sp"
+                    android:layout_centerVertical="true"
+                    android:tag="@string/profile_item_label"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/iv_array"
+                    android:layout_marginRight="5dp"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:tag="@string/profile_item_part"/>
+
+                <ImageView
+                    android:id="@+id/iv_array"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_right_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/split_line_color"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_item_height"
+                android:orientation="vertical"
+                android:background="@drawable/item_bg_selector"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp"
+                android:onClick="true"
+                android:tag="mobile">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机号"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14sp"
+                    android:layout_centerVertical="true"
+                    android:tag="@string/profile_item_label"/>
+
+                <TextView
+                    android:id="@+id/tv_mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/iv_array"
+                    android:layout_marginRight="5dp"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:tag="@string/profile_item_part"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_array"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_right_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/split_line_color"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/split_line_color"
+                android:layout_marginTop="20dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_item_height"
+                android:orientation="vertical"
+                android:background="@drawable/item_bg_selector"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp"
+                android:onClick="true"
+                android:tag="area">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="负责地区1"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14sp"
+                    android:layout_centerVertical="true"
+                    android:tag="@string/profile_item_label"/>
+
+                <TextView
+                    android:id="@+id/tv_area1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/iv_array"
+                    android:layout_marginRight="5dp"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:tag="@string/profile_item_part"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_array"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_right_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/split_line_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_item_height"
+                android:orientation="vertical"
+                android:background="@drawable/item_bg_selector"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp"
+                android:onClick="true"
+                android:tag="area"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="负责地区2"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14sp"
+                    android:layout_centerVertical="true"
+                    android:tag="@string/profile_item_label"/>
+
+                <TextView
+                    android:id="@+id/tv_area2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/iv_array"
+                    android:layout_marginRight="5dp"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:tag="@string/profile_item_part"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_array"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_right_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/split_line_color"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_item_height"
+                android:orientation="vertical"
+                android:background="@drawable/item_bg_selector"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp"
+                android:onClick="true"
+                android:tag="area"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="负责地区3"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14sp"
+                    android:layout_centerVertical="true"
+                    android:tag="@string/profile_item_label"/>
+
+                <TextView
+                    android:id="@+id/tv_area3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/iv_array"
+                    android:layout_marginRight="5dp"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:tag="@string/profile_item_part"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_array"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_right_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

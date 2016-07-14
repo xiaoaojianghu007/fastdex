@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:background="#77000000"
+    >
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fdf9f6"
+        android:layout_alignParentBottom="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+            <ImageButton
+                android:id="@+id/ib_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/send_out_edit_close"
+                android:background="@null"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ece7e4"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_quantity"
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@color/send_out_red_bg"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/send_out_edit_triangle"
+                    android:background="@null"/>
+
+                <TextView
+                    android:id="@+id/tv_quantity_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="数量"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/send_out_label"/>
+
+                <TextView
+                    android:id="@+id/tv_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0吨"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_price"
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/send_out_edit_triangle"
+                    android:background="@null"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_price_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="售价"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/send_out_label_default"/>
+
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.0"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ece7e4"
+            />
+
+        <LinearLayout
+            android:id="@+id/rl_container"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="#ece7e4">
+
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/item_bg_selector"
+                    android:textSize="25sp"
+                    android:textColor="#98999a"
+                    android:text="7"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/item_bg_selector"
+                    android:textSize="25sp"
+                    android:textColor="#98999a"
+                    android:layout_marginLeft="1dp"
+                    android:text="8"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/item_bg_selector"
+                    android:textSize="25sp"
+                    android:textColor="#98999a"
+                    android:layout_marginLeft="1dp"
+                    android:text="9"/>
+
+                <Button
+                    android:id="@+id/btn_clear"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/item_bg_selector"
+                    android:textSize="18sp"
+                    android:textColor="#b1b1af"
+                    android:layout_marginLeft="1dp"
+                    android:text="清零"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ece7e4"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="#ece7e4">
+
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/item_bg_selector"
+                    android:textSize="25sp"
+                    android:textColor="#98999a"
+                    android:text="4"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/item_bg_selector"
+                    android:textSize="25sp"
+                    android:textColor="#98999a"
+                    android:layout_marginLeft="1dp"
+                    android:text="5"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/item_bg_selector"
+                    android:textSize="25sp"
+                    android:textColor="#98999a"
+                    android:layout_marginLeft="1dp"
+                    android:text="6"/>
+
+                <ImageButton
+                    android:id="@+id/btn_del"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/item_bg_selector"
+                    android:textSize="18sp"
+                    android:textColor="#b1b1af"
+                    android:layout_marginLeft="1dp"
+                    android:src="@drawable/send_out_edit_del"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ece7e4"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:background="#ece7e4">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/item_bg_selector"
+                            android:textSize="25sp"
+                            android:textColor="#98999a"
+                            android:text="1"/>
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/item_bg_selector"
+                            android:textSize="25sp"
+                            android:textColor="#98999a"
+                            android:layout_marginLeft="1dp"
+                            android:text="2"/>
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/item_bg_selector"
+                            android:textSize="25sp"
+                            android:textColor="#98999a"
+                            android:layout_marginLeft="1dp"
+                            android:text="3"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="1dp">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:background="@drawable/item_bg_selector"
+                            android:textSize="25sp"
+                            android:textColor="#98999a"
+                            android:layout_marginLeft="1dp"
+                            android:text="0"/>
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/item_bg_selector"
+                            android:textSize="25sp"
+                            android:textColor="#98999a"
+                            android:layout_marginLeft="1dp"
+                            android:text="."/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_ok"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:background="#c04d51"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="1dp"
+                    android:text="确定"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

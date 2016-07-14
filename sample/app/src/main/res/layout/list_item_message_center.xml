@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:textColor="#2aa45c"
+            android:text="07-01"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="5dp"
+            android:background="#cccdce"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/msg_center_point"
+            android:layout_centerVertical="true"
+            />
+        <View
+            android:id="@+id/view_bottom"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cccdce"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="35dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_green_border_and_fill_shape">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/iv"
+            android:text="短信: 双赢钾肥特价了，多买多送，欢迎广大农户朋友"
+            android:padding="8dp"
+            android:lines="2"
+            />
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ico_right_arrow"/>
+    </RelativeLayout>
+
+</LinearLayout>

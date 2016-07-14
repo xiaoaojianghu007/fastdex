@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_heigth">46dp</dimen>
+    <color name="title_bg">#f8f9fa</color>
+
+    <color name="left_text_color">#00ad5b</color>
+    <color name="right_text_color">#80cd00</color>
+    <color name="right_text_color_disable">#2e6430</color>
+</resources>

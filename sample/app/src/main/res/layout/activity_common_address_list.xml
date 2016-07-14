@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.fertilizercrm.view.TitleView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_heigth"
+        android:tag="《:(常用地址)"/>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
