@@ -92,6 +92,15 @@ class DexCachePlugin implements Plugin<Project>,TaskExecutionListener  {
             }
             br.close();
         }
+
+
+        //返回读取指定资源的输入流
+        InputStream is = getClass().getResourceAsStream("META-INF/gradle-plugins/com.tong.fastdex.properties");
+        BufferedReader br=new BufferedReader(new InputStreamReader(is));
+        String s = "";
+        while ((s = br.readLine()) != null)
+            System.out.println("=== " + s);
+
         return keepMainDexList;
     }
 

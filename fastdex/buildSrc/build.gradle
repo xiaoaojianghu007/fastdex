@@ -20,3 +20,17 @@ task bintrayUpload(type: GradleBuild) {
     buildFile = 'bintray.gradle'
     tasks = ['bintrayUpload']
 }
+
+
+group='com.tong.tools.build'
+
+version='1.0.1'
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: uri('../../.repo'))
+        }
+    }
+}
+
