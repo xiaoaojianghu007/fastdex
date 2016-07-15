@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.fertilizercrm.view.TitleView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_heigth"
+        android:tag="(管理)"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:background="@color/default_activity_bg">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="130dp"
+                android:background="@color/green">
+
+                <com.example.fertilizercrm.common.view.AutoImageViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"/>
+
+                <com.example.fertilizercrm.common.view.PagerMarkerView
+                    android:id="@+id/pager_marker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"/>
+            </RelativeLayout>
+
+            <com.example.fertilizercrm.common.view.GridViewForScrollView
+                android:id="@+id/grid_view"
+                android:horizontalSpacing="1dp"
+                android:verticalSpacing="1dp"
+                android:stretchMode="columnWidth"
+                android:numColumns="2"
+                android:gravity="center"
+                android:listSelector="@null"
+                android:background="#e5e6e7"
+                android:layout_width="fill_parent"
+                android:layout_height="225dp"
+                android:scrollbars="none"
+                android:fadingEdge="none"
+                android:cacheColorHint="#00000000"
+                />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#e5e6e7"/>
+
+            <LinearLayout
+                android:id="@+id/ll_scale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#e5e6e7"
+                    />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/white"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    >
+
+                    <com.example.fertilizercrm.view.SectorView
+                        android:id="@+id/sector_view"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="30dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_bl"
+                        android:layout_width="fill_parent"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp">
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="22dp"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="18dp"
+                                android:text="销售比例"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="22dp"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            >
+                            <View
+                                android:layout_width="28dp"
+                                android:layout_height="15dp"
+                                android:background="@color/sector_me"/>
+
+                            <TextView
+                                android:id="@+id/tv_mine"
+                                android:layout_width="wrap_content"
+                                android:layout_height="18dp"
+                                android:gravity="left"
+                                android:layout_marginLeft="15dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="22dp"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            >
+                            <View
+                                android:layout_width="28dp"
+                                android:layout_height="15dp"
+                                android:background="@color/sector_other"/>
+
+                            <TextView
+                                android:id="@+id/tv_other"
+                                android:layout_width="wrap_content"
+                                android:layout_height="18dp"
+                                android:gravity="left"
+                                android:layout_marginLeft="15dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#e5e6e7"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

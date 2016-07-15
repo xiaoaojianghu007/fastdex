@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingRight="10dp"
+        >
+
+        <ImageButton
+            android:id="@+id/ib_add_pic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/add_img"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+
+</HorizontalScrollView>
+

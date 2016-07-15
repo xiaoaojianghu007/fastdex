@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_activity_bg">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主题"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/et_subject"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/business_apply_et_bg"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:hint="单行输入"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:paddingLeft="10dp"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#e5e6e7"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_type"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="费用类型"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/iv_array"
+                android:layout_marginRight="5dp"
+                android:textSize="12sp"
+                android:layout_centerVertical="true"
+                android:text="会议"
+                android:tag="@string/profile_item_part"
+                />
+
+            <ImageView
+                android:id="@+id/iv_array"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ico_right_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#e5e6e7"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white">
+
+            <EditText
+                android:id="@+id/et_amount"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/business_apply_et_bg"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:hint="单行输入"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:paddingLeft="10dp"
+                android:inputType="numberDecimal"
+
+                android:layout_toRightOf="@+id/tv"
+                />
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="金额"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#e5e6e7"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:hint="多行输入..."
+                android:textSize="13sp"
+                android:gravity="top"
+                android:padding="7dp"
+                android:textColor="#979899"
+                android:background="@drawable/work_border_bg_shape"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#e5e6e7"/>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/btn_common_height"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="提交"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/rl_pwd"
+            android:background="@drawable/btn_green_selector"/>
+    </LinearLayout>
+</ScrollView>

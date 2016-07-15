@@ -1,0 +1,141 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.tong.fastdex'
+
+//mac或者linux下开启增量更新dex，速度会有进一步提升
+fastdex {
+    incremental=true
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/maven/com.squareup.okio/okio/pom.xml'
+        exclude 'META-INF/maven/com.squareup.okio/okio/pom.properties'
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+        incremental true
+    }
+
+    defaultConfig {
+        applicationId "com.example.fertilizercrm"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0.6"
+        multiDexEnabled true
+    }
+
+//    signingConfigs {
+//        debug {
+//            keyAlias 'debug'
+//            keyPassword 'nongjiale'
+//            storeFile file("FertilizerCRM-debug.jks")
+//            storePassword 'nongjiale'
+//        }
+//
+//        release {
+//            keyAlias 'release'
+//            keyPassword 'fertilizercrm'
+//            storeFile file("FertilizerCRM-release.jks")
+//            storePassword 'fertilizercrm'
+//        }
+//    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            //signingConfig signingConfigs.release
+        }
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //signingConfig signingConfigs.release
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    useLibrary 'org.apache.http.legacy'
+}
+
+ext {
+    dagger2Version = '2.0'
+    leakcanaryVersion = '1.3'
+    blockcanaryVersion = '1.0.0'
+    metricsVersion = '0.4'
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    compile "com.android.support:appcompat-v7:23.1.1"
+    compile "com.android.support:support-v13:23.1.1"
+    compile "com.android.support:support-annotations:23.1.1"
+    compile "com.android.support:recyclerview-v7:23.1.1"
+    compile "com.android.support:cardview-v7:23.1.1"
+    compile "com.android.support:palette-v7:23.1.1"
+    compile "com.android.support:design:23.1.1"
+
+
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile 'com.bigkoo:pickerview:2.0.8'
+    compile 'com.bigkoo:alertview:1.0.2'
+    compile 'com.bigkoo:svprogresshud:1.0.2'
+    compile 'net.lingala.zip4j:zip4j:1.3.2'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
+
+    //xUtils框架
+    compile 'org.xutils:xutils:3.3.36'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+
+    //处理多个dex
+    compile 'com.android.support:multidex:1.0.0'
+    //圆形状图片
+
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
+    //
+    compile 'info.hoang8f:android-segmented:1.0.6'
+
+    compile 'com.google.code.gson:gson:2.3.1'
+
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.squareup.okio:okio:1.0.1'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
+
+    //http请求
+    compile 'com.zhy:okhttputils:2.4.1'
+
+    compile 'joda-time:joda-time:2.6'
+
+    compile 'com.squareup.retrofit:retrofit:1.8.0'
+    compile 'com.squareup.okhttp:okhttp:2.2.0'
+    compile 'com.squareup.okhttp:okhttp-urlconnection:2.2.0'
+    compile 'com.squareup:otto:1.3.5'
+    compile 'com.squareup.okio:okio:1.0.1'
+
+    compile "io.reactivex:rxandroid:1.2.0"
+    compile "io.reactivex:rxjava:1.1.5"
+    compile "org.greenrobot:eventbus:3.0.0"
+    provided "org.glassfish:javax.annotation:10.0-b28"
+    compile "com.commit451:PhotoView:1.2.4"
+    compile "com.evernote:android-sdk:2.0.0-RC3"
+    compile "com.nineoldandroids:library:2.4.0"
+    //compile 'org.codehaus.groovy:groovy:2.4.7'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.dialonce:dialonce-android:2.3.1'
+
+    testCompile 'junit:junit:4.12'
+}

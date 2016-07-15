@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_activity_bg"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="130dp"
+                    android:background="@drawable/me_bg" />
+
+                <ImageButton
+                    android:id="@+id/ib_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@null"
+                    android:src="@drawable/ico_setting" />
+
+                <ImageButton
+                    android:id="@+id/ib_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:visibility="gone"
+                    android:src="@drawable/ico_msg" />
+
+                <View
+                    android:id="@+id/view_bottom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/me_bottom"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/iv_bg"
+                    android:background="@color/white" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_head"
+                    android:layout_width="65dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignParentBottom="true">
+
+                    <com.example.fertilizercrm.common.view.RoundImageView
+                        android:id="@+id/iv_head"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/default_img" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/me_bottom"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/rl_head"
+                    android:gravity="center_vertical"
+                    android:text="吉林省****公司"
+                    android:textColor="@color/black"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/me_bottom"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/tv_company"
+                    android:gravity="center">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="#bfc0c1" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/me_bottom"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/ll_center"
+                    android:gravity="center_vertical"
+                    android:text="批发商"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tv_mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/view_bottom"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/rl_head"
+                    android:gravity="center_vertical"
+                    android:text="13956786340"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_mobile"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/rl_head"
+                    android:gravity="center_vertical"
+                    android:text="张小亮"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/split_line_color"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/split_line_color"
+                android:layout_marginTop="20dp"/>
+
+            <com.example.fertilizercrm.common.view.ListViewForScrollView
+                android:id="@+id/lv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:divider="@color/split_line_color"
+                android:dividerHeight="1dp"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/split_line_color"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

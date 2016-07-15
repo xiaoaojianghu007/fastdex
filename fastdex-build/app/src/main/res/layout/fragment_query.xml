@@ -1,0 +1,251 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/default_activity_bg">
+
+    <com.example.fertilizercrm.view.TitleView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_heigth"
+        android:tag="(查询)"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_container"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/query_item_height3"
+        android:background="@color/white">
+
+        <View
+            android:id="@+id/view_vertical"
+            android:layout_width="@dimen/query_split"
+            android:layout_height="@dimen/query_item_height2"
+            android:background="@color/split_line_color"
+            android:layout_centerHorizontal="true"/>
+
+        <View
+            android:id="@+id/view_horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/query_split"
+            android:background="@color/split_line_color"
+            android:layout_marginTop="@dimen/query_item_height"
+            />
+
+        <View
+            android:id="@+id/view_horizontal1"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/query_split"
+            android:background="@color/split_line_color"
+            android:layout_marginTop="@dimen/query_item_height2"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_send_out"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/query_item_height"
+            android:layout_toLeftOf="@+id/view_vertical"
+            android:paddingBottom="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:tag="1">
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="出货查询"
+                android:textSize="@dimen/query_item_title"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv"
+                android:text="在这里可以查询你的出货记录"
+                android:textSize="@dimen/query_item_desc"
+                android:textColor="@color/gray"
+                android:layout_marginTop="@dimen/query_item_top"
+                android:layout_toLeftOf="@+id/iv"/>
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:src="@drawable/query_send_out"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_send_in"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/query_item_height"
+            android:layout_toRightOf="@+id/view_vertical"
+            android:paddingBottom="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:tag="6">
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="进货查询"
+                android:textSize="@dimen/query_item_title"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv"
+                android:text="在这里可以查询你的进货明细"
+                android:textSize="@dimen/query_item_desc"
+                android:textColor="@color/gray"
+                android:layout_marginTop="@dimen/query_item_top"
+                android:layout_toLeftOf="@+id/iv"/>
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:src="@drawable/query_send_in"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_achievement"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/query_item_height"
+            android:layout_toRightOf="@+id/view_vertical"
+            android:layout_below="@+id/view_horizontal"
+            android:paddingBottom="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="20dp"
+            android:paddingLeft="11dp"
+            android:tag="4">
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:src="@drawable/query_achievement"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="业绩排名"
+                android:textSize="@dimen/query_item_title"
+                android:layout_toRightOf="@+id/iv"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv"
+                android:layout_toRightOf="@+id/iv"
+                android:text="在这里可以查询你的业绩"
+                android:textSize="@dimen/query_item_desc"
+                android:textColor="@color/gray"
+                android:layout_marginTop="@dimen/query_item_top"
+                android:layout_marginLeft="8dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_money"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/query_item_height"
+            android:layout_toLeftOf="@+id/view_vertical"
+            android:layout_below="@+id/view_horizontal"
+            android:paddingBottom="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="20dp"
+            android:paddingLeft="12dp"
+            android:tag="2">
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:src="@drawable/query_money"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="款项查询"
+                android:textSize="@dimen/query_item_title"
+                android:layout_toRightOf="@+id/iv"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv"
+                android:layout_toRightOf="@+id/iv"
+                android:text="在这里可以查询你的收支明细"
+                android:textSize="@dimen/query_item_desc"
+                android:textColor="@color/gray"
+                android:layout_marginTop="@dimen/query_item_top"
+                android:layout_marginLeft="8dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_examine"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/query_item_height"
+            android:layout_below="@+id/view_horizontal1"
+            android:paddingBottom="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:tag="3">
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:src="@drawable/query_examine"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="业务员考核"
+                android:textSize="@dimen/query_item_title"
+                android:layout_toRightOf="@+id/iv"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv"
+                android:layout_toRightOf="@+id/iv"
+                android:text="在这里可以进行业务员考核"
+                android:textSize="@dimen/query_item_desc"
+                android:textColor="@color/gray"
+                android:layout_marginTop="@dimen/query_item_top"
+                android:layout_marginLeft="8dp"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

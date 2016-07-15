@@ -1,11 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.tong.fastdex'
 
-//mac或者linux下开启增量更新dex，速度会有进一步提升
-//fastdex {
-//    incremental=true
-//}
-
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.2"

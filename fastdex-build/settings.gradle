@@ -1,0 +1,3 @@
+rootProject.name = 'fastdex-build'
+
+include ':app', ':fastdex'

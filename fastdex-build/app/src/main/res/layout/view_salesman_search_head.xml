@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_salesman"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/item_bg_selector">
+
+        <TextView
+            android:id="@+id/tv_customer_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="业务员名称"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_salesman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_customer_label"
+            android:layout_marginLeft="25dp"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ico_right_arrow"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/split_line_color"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_start_date"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/item_bg_selector">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始时间"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/iv_array"
+            android:layout_marginRight="5dp"
+            android:textSize="12sp"
+            android:layout_centerVertical="true"
+            android:text="2016-01-01"
+            android:tag="@string/profile_item_part"
+            />
+        <ImageView
+            android:id="@+id/iv_array"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ico_right_arrow"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/split_line_color"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_end_date"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/item_bg_selector">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束时间"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_end_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/iv_array"
+            android:layout_marginRight="5dp"
+            android:textSize="12sp"
+            android:layout_centerVertical="true"
+            android:text="2016-01-01"
+            android:tag="@string/profile_item_part"
+            />
+        <ImageView
+            android:id="@+id/iv_array"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ico_right_arrow"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/split_line_color"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_apply_type"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:visibility="gone"
+        android:background="@drawable/item_bg_selector">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="申请类别"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_apply_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_array"
+            android:text="出差"
+            android:layout_marginRight="10dp"/>
+
+
+        <ImageView
+            android:id="@+id/iv_array"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ico_right_arrow"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/split_line_color"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_margin="10dp"
+        android:text="查    询"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/rl_pwd"
+        android:visibility="gone"
+        android:background="@drawable/btn_green_selector"/>
+</LinearLayout>
