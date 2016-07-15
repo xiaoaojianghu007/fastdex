@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../sample/app/app.iml" filepath="$PROJECT_DIR$/../sample/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fastdex.iml" filepath="$PROJECT_DIR$/fastdex.iml" />
+      <module fileurl="file://$PROJECT_DIR$/buildSrc/gradle-fastdex.iml" filepath="$PROJECT_DIR$/buildSrc/gradle-fastdex.iml" />
+    </modules>
+  </component>
+</project>

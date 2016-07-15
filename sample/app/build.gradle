@@ -1,4 +1,10 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.tong.fastdex'
+
+//mac或者linux下开启增量更新dex，速度会有进一步提升
+fastdex {
+    incremental=true
+}
 
 android {
     compileSdkVersion 23
@@ -28,32 +34,32 @@ android {
         multiDexEnabled true
     }
 
-    signingConfigs {
-        debug {
-            keyAlias 'debug'
-            keyPassword 'nongjiale'
-            storeFile file("FertilizerCRM-debug.jks")
-            storePassword 'nongjiale'
-        }
-
-        release {
-            keyAlias 'release'
-            keyPassword 'fertilizercrm'
-            storeFile file("FertilizerCRM-release.jks")
-            storePassword 'fertilizercrm'
-        }
-    }
+//    signingConfigs {
+//        debug {
+//            keyAlias 'debug'
+//            keyPassword 'nongjiale'
+//            storeFile file("FertilizerCRM-debug.jks")
+//            storePassword 'nongjiale'
+//        }
+//
+//        release {
+//            keyAlias 'release'
+//            keyPassword 'fertilizercrm'
+//            storeFile file("FertilizerCRM-release.jks")
+//            storePassword 'fertilizercrm'
+//        }
+//    }
 
     buildTypes {
         debug {
             minifyEnabled false
-            signingConfig signingConfigs.release
+            //signingConfig signingConfigs.release
         }
 
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.release
+            //signingConfig signingConfigs.release
         }
     }
 

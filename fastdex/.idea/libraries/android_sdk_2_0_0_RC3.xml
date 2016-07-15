@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="android-sdk-2.0.0-RC3">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../sample/app/build/intermediates/exploded-aar/com.evernote/android-sdk/2.0.0-RC3/res" />
+      <root url="jar://$PROJECT_DIR$/../sample/app/build/intermediates/exploded-aar/com.evernote/android-sdk/2.0.0-RC3/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.evernote/android-sdk/2.0.0-RC3/3bdd90f21194d174d9ea091b1373e984af7a1bb1/android-sdk-2.0.0-RC3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
