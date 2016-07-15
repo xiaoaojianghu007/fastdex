@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="bugly_1.2.8_release">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../sample/app/libs/bugly_1.2.8_release.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
