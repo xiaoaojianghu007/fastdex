@@ -9,11 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import com.example.fertilizercrm.common.utils.Logger;
-
 import com.example.fertilizercrm.R;
 import com.example.fertilizercrm.basic.BaseActivity;
 import com.example.fertilizercrm.bean.Agent;
@@ -23,7 +21,6 @@ import com.example.fertilizercrm.bean.RoleBean;
 import com.example.fertilizercrm.http.Params;
 import com.example.fertilizercrm.http.Req;
 import com.example.fertilizercrm.utils.FerUtil;
-
 import org.apache.http.Header;
 import org.json.JSONObject;
 

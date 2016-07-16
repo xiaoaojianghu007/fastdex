@@ -112,7 +112,7 @@ public class MainActivity extends BaseActivity implements EMEventListener {
 
         instance = this;
 
-        showLongToast("哈哈");
+        showLongToast("哈哈111");
 
         if (savedInstanceState != null && savedInstanceState.getBoolean(Constant.ACCOUNT_REMOVED, false)) {
             // 防止被移除后，没点确定按钮然后按了home键，长期在后台又进app导致的crash
